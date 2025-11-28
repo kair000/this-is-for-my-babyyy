@@ -112,39 +112,3 @@
 
 </body>
 </html>
-  </style>
-</head>
-<body>
-  <main class="card">
-    <section class="canvas">
-      <div class="photo-gallery">
-        <img src="us.jpeg" alt="Our Photo 1">
-        <img src="us1.jpeg" alt="Our Photo 2">
-        <img src="us2.jpeg" alt="Our Photo 3">
-        <img src="us3.jpeg" alt="Our Photo 4">
-        <img src="us4.jpeg" alt="Our Photo 5">
-      </div>
-    </section><section class="content">
-  <h1>FOR MY BABYYYY</h1>
-  <div id="type" class="typewriter"></div>
-  <button id="replay" class="btn">Replay Message</button>
-  <div class="muted">Tip: Click <b>Replay</b><br>WAG NA SANA IKAW MAGALIT SA'KIN☹️☹️☹️</div>
-</section>
-
-  </main>  <script>
-    const loveNote = {
-      author:'your babyyyy',recipient:' MY BABYYY',lines:[
-        'I just want to take a moment to tell you how truly grateful I am for having you in my life. Every single day with you feels like a blessing — one that I will never take for granted. You’ve brought so much light, comfort, and happiness into my world, and I can’t imagine going through life without you by my side.',
-        'You’ve been patient with me through my ups and downs, through my flaws and mistakes. And I know there were times I’ve hurt you — times I made you feel like you weren’t appreciated or that your efforts didn’t matter. I’m so sorry for that, my love. That was never my intention. I never want you to doubt how much I love and value you.',
-        'Thank you for staying even when it’s not easy. Thank you for understanding me when I couldn’t even explain myself. Thank you for believing in us — in what we have — even when I gave you reasons to question it. You have such a beautiful heart, and I’m beyond blessed that it beats for me.',
-        'You’ve taught me what real love means — not just the butterflies and sweet words, but patience, forgiveness, and growing together. I’m learning every day to ',' better for you, to love you the way you deserve — with honesty,consistency.',
-        'I know I’m not perfect, but I promise to keep trying, to keep choosing you no matter what. Having you is one of the best things that ever happened to me, and I’ll spend every day making sure you know that. ILOVEYOUUSOOOMUCHHH, BABYYYY.'
-      ],pauseBetweenLines:700,typingSpeed:50
-    };
-    const container=document.getElementById('type');const replay=document.getElementById('replay');
-    function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
-    async function typeText(text,speed){for(let i=0;i<text.length;i++){container.textContent+=text[i];await sleep(speed)}}
-    async function showNote(){container.textContent='';await typeText(`HIIIII ${loveNote.recipient},\n\n`,loveNote.typingSpeed);for(const line of loveNote.lines){await typeText(line+'\n\n',loveNote.typingSpeed);await sleep(loveNote.pauseBetweenLines);}await typeText(`— ${loveNote.author}`,loveNote.typingSpeed)}
-    replay.addEventListener('click',()=>{showNote()});window.addEventListener('load',()=>{showNote()});
-  </script></body>
-</html>
