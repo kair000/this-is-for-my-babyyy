@@ -1,40 +1,117 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FOR MY BABYYYY</title>
-  <style>
-    :root{
-      --bg1:#0f172a;--bg2:#20103a;--accent:#ff6b81;--accent-2:#ffd86b;--mono:'Inter',ui-sans-serif;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Monthsary Message</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #ffafc9, #ffd6e8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      font-family:var(--mono);
-      background:linear-gradient(135deg,var(--bg1),var(--bg2));
-      color:#f8fafc;display:flex;align-items:center;justify-content:center;padding:40px;
+
+    .container {
+        background: #ffffffcc;
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 800px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        animation: fadeIn 1.2s ease;
     }
-    .card{width:min(980px,96vw);background:rgba(255,255,255,0.02);border-radius:20px;box-shadow:0 10px 40px rgba(2,6,23,0.6);padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
-    .canvas{position:relative;border-radius:14px;overflow:hidden;height:420px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);backdrop-filter:blur(6px)}
-    .photo-gallery{display:flex;flex-wrap:nowrap;gap:20px;animation:slide 18s infinite linear;}
-    .photo-gallery img{width:280px;height:280px;border-radius:20px;object-fit:cover;box-shadow:0 4px 20px rgba(0,0,0,0.2);transition:transform 0.4s ease,opacity 0.4s ease;}
-    .photo-gallery img:hover{transform:scale(1.08);opacity:0.9;}@keyframes slide{
-  0%{transform:translateX(0)}
-  25%{transform:translateX(-25%)}
-  50%{transform:translateX(-50%)}
-  75%{transform:translateX(-75%)}
-  100%{transform:translateX(0)}
-}
 
-.content{padding:12px 4px;}
-h1{font-size:28px;margin-bottom:8px}
-.typewriter{font-size:18px;line-height:1.6;padding:12px 16px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03);white-space:pre-wrap;min-height:120px}
-.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#0f172a;box-shadow:0 6px 18px rgba(255,107,129,0.12)}
-.muted{color:rgba(248,250,252,0.6);font-size:13px}
-@media(max-width:880px){.card{grid-template-columns:1fr}.canvas{height:auto}.photo-gallery{animation:none;flex-wrap:wrap;justify-content:center}.photo-gallery img{width:48%;height:auto}}
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
+    h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #d63384;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #444;
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .next-btn {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .next-btn a {
+        padding: 12px 22px;
+        background: #d63384;
+        color: white;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        transition: 0.3s ease;
+    }
+
+    .next-btn a:hover {
+        transform: scale(1.08);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Happy 3rd Monthsary, Babyy</h1>
+
+    <p>
+        happy 3rd monthsary to us, babyy. I know this month isn’t full of happiness, but always remember that I will always love you forever. I promise to you that I’ll be strong for us, because I don’t want to hurt you because of my weakness. may this month be full of love, happiness, and cute memories. I love you so much, babyy. thank you for staying, thank you for choosing me every single day. no matter how hard things get, I’ll hold your hand tighter. you’re my safe place, my comfort, and my biggest blessing. I’m grateful for every moment with you, and I can’t wait for all the months and years we’ll spend together. happy monthsary, my love.
+    </p>
+
+    <div class="gallery">
+        <img src="us.jpeg" />
+        <img src="us1.jpeg" />
+        <img src="us2.jpeg" />
+        <img src="us3.jpeg" />
+    </div>
+
+    <div class="next-btn">
+        <a href="nextpage.html">Next</a>
+    </div>
+</div>
+
+</body>
+</html>
   </style>
 </head>
 <body>
